@@ -2,7 +2,6 @@ public class WeatherFetcher
 {
     public static void main(String[] args) throws Exception
     {
-        //some comment
         UserInterface  ui = new UserInterface();
         WeatherFetcherRequest req = new WeatherFetcherRequest();
 
