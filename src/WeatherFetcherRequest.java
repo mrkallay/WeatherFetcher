@@ -123,6 +123,7 @@ public class WeatherFetcherRequest
         URL url = new URL(requestURL);
         System.out.println(requestURL);
 
+        //this is the request to our URL and it returns an text input stream that we can read from
         BufferedReader in = new BufferedReader(
                 new InputStreamReader(url.openStream()));
 
