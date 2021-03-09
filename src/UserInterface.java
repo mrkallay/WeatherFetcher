@@ -15,12 +15,25 @@ public class UserInterface
      */
     public String inputMode()
     {
-        System.out.println("Enter the desired mode:");
-        System.out.println("1) Zip Code");
-        System.out.println("2) City, State");
-        System.out.println("Enter Q to quit");
-        System.out.println();
-        String mode = input.nextLine();
+        String mode = "";
+        while (true)
+        {
+            System.out.println("Enter the desired mode:");
+            System.out.println("1) Zip Code");
+            System.out.println("2) City, State");
+            System.out.println("Enter Q to quit");
+            System.out.println();
+            mode = input.nextLine();
+            if(mode.toUpperCase().equals("Q") || mode.equals("1") || mode.equals("2") )
+            {
+                //exit state!
+                break;
+            }
+            else
+            {
+              displayErrorMessage("Invalid Input!!!");
+            }
+        }
 
         return mode;
     }
