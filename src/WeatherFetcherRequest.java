@@ -133,6 +133,7 @@ public class WeatherFetcherRequest
         Map mainWeatherData = (Map)weatherData.get("main");
         Double temperature = (Double)mainWeatherData.get("temp");
 
+        //build the response object and return it
         WeatherFetcherResponse response = new WeatherFetcherResponse(temperature);
         return response;
     }
