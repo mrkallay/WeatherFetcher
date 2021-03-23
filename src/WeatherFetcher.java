@@ -34,7 +34,7 @@ public class WeatherFetcher
     {
         //set the mode on the request which will determine how the url is constructed
         req.setMode(WeatherFetcherRequest.ZIP_CODE);
-
+        //TODO: refactor so the validation loop is handled in the UserInterface
         boolean validZip = false;
         while (!validZip)
         {
